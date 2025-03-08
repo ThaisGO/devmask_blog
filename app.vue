@@ -9,7 +9,6 @@
       </nav>
 
       <div class="flex gap-4">
-      <!-- <div class="grid grid-cols-2"> -->
         <div class="mt-7">
           <span class="leading-none border-lime-500 border-4 text-4xl font-semibold text-lime-500 p-2">LY</span>
         </div>
@@ -22,28 +21,24 @@
 
             <ul class="flex justify-end items-center gap-2">
               <li>
-                <NuxtLink to="www.github.com"><i class='bx bxl-github text-3xl text-lime-500' ></i></NuxtLink>
+                <a href="www.github.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github text-3xl text-lime-500' ></i></a>
               </li>
               <li>
-                <NuxtLink to="www.youtube.com"><i class='bx bxl-youtube text-3xl text-lime-500' ></i></NuxtLink>
+                <a href="www.youtube.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube text-3xl text-lime-500' ></i></a>
               </li>
             </ul>
         </div>
-
       </div>
     </header>
+
+    <div>
+    <Button>Click me</Button>
+  </div>
 
     <!-- Pega os arquivos da pasta Page -->
     <<NuxtRouteAnnouncer />
     <NuxtPage />
   </div>
-  <!-- <div class="max-w-7xl px-4 mx-auto">
-    <header class="mt-8 mb-4 flex gap-4 items-end">
-      <div>
-        <h1 class="text-2xl font-semibold">Personal Blog</h1>
-        <p class="text-gray-500">learning programming</p>
-      </div>
-    </header> -->
 </template>
 
 <style>
