@@ -1,26 +1,58 @@
 <template>
-  <div class="max-w-3xl px-4 mx-auto">
-    <header class="mt-8 mb-4 flex justify-between items-end">
+  <div class="container">
+    <header>
+      <nav class=" p-4">
+        <ul class="flex justify-end">
+          <li><i class='bx bx-search-alt-2 text-3xl text-lime-500'></i></li>
+          <li>back</li>
+        </ul>
+      </nav>
+
+      <div class="flex gap-4">
+      <!-- <div class="grid grid-cols-2"> -->
+        <div class="mt-7">
+          <span class="leading-none border-lime-500 border-4 text-4xl font-semibold text-lime-500 p-2">LY</span>
+        </div>
+
+        <div>
+          <h1 class="text-5xl mb-3">Lorem Ypsun</h1>
+          <p class="text-xl font-light italic mb-2">Front Developer Youtuber Writer</p>
+          <p class="text-xl font-light italic mb-2">HTML | CSS | Javascript | Vue | 
+            Writings | Lifestyle</p>
+
+            <ul class="flex justify-end items-center gap-2">
+              <li>
+                <NuxtLink to="www.github.com"><i class='bx bxl-github text-3xl text-lime-500' ></i></NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="www.youtube.com"><i class='bx bxl-youtube text-3xl text-lime-500' ></i></NuxtLink>
+              </li>
+            </ul>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Pega os arquivos da pasta Page -->
+    <<NuxtRouteAnnouncer />
+    <NuxtPage />
+  </div>
+  <!-- <div class="max-w-7xl px-4 mx-auto">
+    <header class="mt-8 mb-4 flex gap-4 items-end">
       <div>
         <h1 class="text-2xl font-semibold">Personal Blog</h1>
         <p class="text-gray-500">learning programming</p>
       </div>
-
-      <!-- <Btn>Hire Me</Btn>   -->
-    </header>
-
-    <!-- Pega os arquivos da pasta Page -->
-  <NuxtLayout>
-    <<NuxtRouteAnnouncer />
-    <NuxtPage />
-  </NuxtLayout>
-    <!-- 
-    <NuxtWelcome /> -->
-  </div>
+    </header> -->
 </template>
 
 <style>
-  body {
-    @apply bg-gray-500
-  }
+body {
+  @apply bg-zinc-800 text-zinc-300
+
+}
+.container {
+  /* também damos uma largura máxima de 1024px para a tela */
+  @apply mx-auto max-w-5xl px-10
+}
 </style>
