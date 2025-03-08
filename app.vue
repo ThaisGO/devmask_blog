@@ -11,9 +11,10 @@
 
     <!-- Pega os arquivos da pasta Page -->
   <NuxtLayout>
+    <<NuxtRouteAnnouncer />
     <NuxtPage />
   </NuxtLayout>
-    <!-- <NuxtRouteAnnouncer />
+    <!-- 
     <NuxtWelcome /> -->
   </div>
 </template>
