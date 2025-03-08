@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { Separator } from '@/components/ui/separator'
+</script>
+
 <template>
   <div class="container">
     <header>
@@ -16,7 +20,7 @@
         <div>
           <h1 class="text-5xl mb-3">Lorem Ypsun</h1>
           <p class="text-xl font-light italic mb-2">Front Developer Youtuber Writer</p>
-          <p class="text-xl font-light italic mb-2">HTML | CSS | Javascript | Vue | 
+          <p class="text-xl font-light italic mb-3">HTML | CSS | Javascript | Vue | 
             Writings | Lifestyle</p>
 
             <ul class="flex justify-end items-center gap-2">
@@ -31,9 +35,9 @@
       </div>
     </header>
 
-    <div>
-    <Button>Click me</Button>
-  </div>
+    <div class="flex justify-center my-8">
+      <Separator class="bg-zinc-300 max-w-lg opacity-65" />
+    </div>
 
     <!-- Pega os arquivos da pasta Page -->
     <<NuxtRouteAnnouncer />
