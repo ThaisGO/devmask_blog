@@ -20,17 +20,19 @@ import { Separator } from '@/components/ui/separator'
         <div>
           <h1 class="text-5xl mb-3">Lorem Ypsun</h1>
           <p class="text-xl font-light italic mb-2">Front Developer Youtuber Writer</p>
-          <p class="text-xl font-light italic mb-3">HTML | CSS | Javascript | Vue | 
+          <p class="text-xl font-light italic mb-3">HTML | CSS | Javascript | Vue |
             Writings | Lifestyle</p>
 
-            <ul class="flex justify-end items-center gap-2">
-              <li>
-                <a href="www.github.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github text-3xl text-lime-500' ></i></a>
-              </li>
-              <li>
-                <a href="www.youtube.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube text-3xl text-lime-500' ></i></a>
-              </li>
-            </ul>
+          <ul class="flex justify-end items-center gap-2">
+            <li>
+              <a href="www.github.com" target="_blank" rel="noopener noreferrer"><i
+                  class='bx bxl-github text-3xl text-lime-500'></i></a>
+            </li>
+            <li>
+              <a href="www.youtube.com" target="_blank" rel="noopener noreferrer"><i
+                  class='bx bxl-youtube text-3xl text-lime-500'></i></a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -40,7 +42,7 @@ import { Separator } from '@/components/ui/separator'
     </div>
 
     <!-- Pega os arquivos da pasta Page -->
-    <<NuxtRouteAnnouncer />
+    <!-- <NuxtRouteAnnouncer /> -->
     <NuxtPage />
   </div>
 </template>
@@ -48,8 +50,8 @@ import { Separator } from '@/components/ui/separator'
 <style>
 body {
   @apply bg-zinc-800 text-zinc-300
-
 }
+
 .container {
   /* também damos uma largura máxima de 1024px para a tela */
   @apply mx-auto max-w-5xl px-10
