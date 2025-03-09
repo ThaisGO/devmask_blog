@@ -1,25 +1,26 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData(() => queryCollection('content').all())
-// const { data: posts } = await useAsyncData('blog', () => queryContent().find())
-console.log(posts)
+  const { data: posts } = await useAsyncData(() => queryCollection('content').order('date', 'DESC').all())
 </script>
 
 <template>
-  <div>
-    <h1>Blog</h1>
-    <!-- <ul>
-      <li v-for="post in posts" :key="post.id">
-        <NuxtLink :to="post.path">{{ post.title }} - {{ post.date }}</NuxtLink>
-      </li>
-    </ul> -->
-    <ContentList path="/" v-slot="{ list }" :query="{
-      draft: false,
-      sort: [{ date: -1 }]
-    }">
-      <div v-for="post in list" :key="post._path">
-        <div class="text-sm text-gray-500 mt-px">{{ post.title }}</div>
-        <div class="text-sm text-gray-500 mt-px">{{ post.date }}</div>
+  <main class="mx-auto flex flex-col">
+    <div v-for="post in posts" :key="post.id">
+      <div class="flex gap-4 mb-6">
+        
+        <div class="text-lg font-light">
+          {{ post.date }}
+        </div>
+        
+        <div>
+          <NuxtLink class="text-lg text-lime-500 font-medium"     
+            :to="post.path">
+              {{ post.category ? `[${post.category}]` : '' }} 
+              {{ post.title }}
+          </NuxtLink>
+          <p class="text-base font-light">{{ post.description }}</p>
+        </div>
       </div>
-    </ContentList>
-  </div>
+    </div>
+
+  </main>
 </template>
