@@ -1,5 +1,7 @@
 <script setup lang="ts">
   const { data: posts } = await useAsyncData(() => queryCollection('content').order('date', 'DESC').all())
+
+  console.log('path', posts.path)
 </script>
 
 <template>
@@ -10,7 +12,6 @@
         <div class="text-lg font-light">
           {{ post.date }}
         </div>
-        
         <div>
           <NuxtLink class="text-lg text-lime-500 font-medium"     
             :to="post.path">
