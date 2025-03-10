@@ -8,7 +8,7 @@ import { Separator } from '@/components/ui/separator'
       <nav class=" p-4">
         <ul class="flex justify-end">
           <li><i class='bx bx-search-alt-2 text-3xl text-lime-500'></i></li>
-          <li>back</li>
+          <li><i class='bx bxl-github text-3xl text-lime-500'></i></li>
         </ul>
       </nav>
 
@@ -23,7 +23,7 @@ import { Separator } from '@/components/ui/separator'
           <p class="text-xl font-light italic mb-3">HTML | CSS | Javascript | Vue |
             Writings | Lifestyle</p>
 
-          <ul class="flex justify-end items-center gap-2">
+          <!-- <ul class="flex justify-end items-center gap-2">
             <li>
               <a href="www.github.com" target="_blank" rel="noopener noreferrer"><i
                   class='bx bxl-github text-3xl text-lime-500'></i></a>
@@ -32,7 +32,7 @@ import { Separator } from '@/components/ui/separator'
               <a href="www.youtube.com" target="_blank" rel="noopener noreferrer"><i
                   class='bx bxl-youtube text-3xl text-lime-500'></i></a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </header>
@@ -42,7 +42,6 @@ import { Separator } from '@/components/ui/separator'
     </div>
 
     <!-- Pega os arquivos da pasta Page -->
-    <!-- <NuxtRouteAnnouncer /> -->
     <NuxtPage />
   </div>
 </template>
@@ -53,7 +52,6 @@ body {
 }
 
 .container {
-  /* também damos uma largura máxima de 1024px para a tela */
   @apply mx-auto max-w-5xl px-10
 }
 </style>
